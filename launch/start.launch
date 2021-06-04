@@ -1,0 +1,13 @@
+<launch>
+    <node name="serial_node"        pkg="rosserial_python"      type="serial_node.py">
+    <param name="port"              type="string"               value="/dev/ttyUSB0"/>
+    <param name="baud"              type="int"                  value="57600"/>
+    </node>
+
+    <node pkg="joy" name="joy_node" type="joy_node" output="screen"/>
+
+    <node pkg="benam" name="joystick_publisher" type="joystick_publisher" output="screen"/>
+
+    <node pkg="benam" name="display_camera" type="display_camera" output="screen"/>
+
+</launch>

@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/hanselmatthew/main_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/hanselmatthew/benam_ws/src/benam/include/**",
+        "/home/hanselmatthew/main_ws/src/first/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

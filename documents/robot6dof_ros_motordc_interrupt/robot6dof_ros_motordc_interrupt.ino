@@ -82,6 +82,17 @@ void belok_kiri(){
   digitalWrite(kanan_belakang1, LOW);   
 }
 
+void diam(){
+  digitalWrite(kanan_depan0, LOW);
+  digitalWrite(kanan_depan1, LOW);  
+  digitalWrite(kanan_belakang0, LOW);
+  digitalWrite(kanan_belakang1, LOW);
+  digitalWrite(kiri_depan0, LOW);
+  digitalWrite(kiri_depan1, LOW);  
+  digitalWrite(kiri_belakang0, LOW);
+  digitalWrite(kiri_belakang1, LOW);
+}
+
 void simpan(){
   servo1save = servo1Pos;
   servo2save = servo2Pos;
@@ -99,6 +110,8 @@ void gerak(){
   servo5.write(servo5save);
   servo6.write(servo6save);
 }
+
+
 
 void servo_cb( const std_msgs::UInt16& cmd_msg){
   if(cmd_msg.data == 0){
@@ -187,6 +200,9 @@ void servo_cb( const std_msgs::UInt16& cmd_msg){
   }
   else if(cmd_msg.data == 16){
     gerak();
+  }
+  else if(cmd_msg.data == 17){
+    diam();
   }
 }
 
@@ -306,6 +322,15 @@ void setup(){
   Serial.begin(57600);
 
   pinMode(switch_pin, OUTPUT);
+
+  pinMode(kiri_depan0,OUTPUT);
+  pinMode(kiri_depan1,OUTPUT);
+  pinMode(kanan_depan0,OUTPUT);
+  pinMode(kanan_depan1,OUTPUT);
+  pinMode(kiri_belakang0,OUTPUT);
+  pinMode(kiri_belakang1,OUTPUT);
+  pinMode(kanan_belakang0,OUTPUT);
+  pinMode(kanan_belakang1,OUTPUT);
   
   servo1.attach(5);
   servo2.attach(6);

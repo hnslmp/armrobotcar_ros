@@ -107,13 +107,18 @@ void joyCallback(const sensor_msgs::Joy::ConstPtr& msg){
     joy_publisher.publish(msg);
     ROS_INFO("15");
   }
-
   //Move Button
   else if(msg->buttons[9] == 1){
     std_msgs::UInt16 msg;
     msg.data = 16;
     joy_publisher.publish(msg);
     ROS_INFO("16");
+  }
+  else{
+    std_msgs::UInt16 msg;
+    msg.data = 17;
+    joy_publisher.publish(msg);
+    ROS_INFO("17");
   }
 }
 

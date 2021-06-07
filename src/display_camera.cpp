@@ -9,7 +9,7 @@ int main(int argc, char** argv)
     ros::init(argc, argv, "pub_cam_node");
     ros::NodeHandle nh;
 
-    cv::VideoCapture capture(1); //0 is to read the camera, "video.format" is to read the local video
+    cv::VideoCapture capture(4); //0 is to read the camera, "video.format" is to read the local video
     if (!capture.isOpened()) {
         ROS_ERROR_STREAM("Failed to open video device\n");
         ros::shutdown();

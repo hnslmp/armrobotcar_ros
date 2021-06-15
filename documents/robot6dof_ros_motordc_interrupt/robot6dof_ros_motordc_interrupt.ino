@@ -26,7 +26,7 @@ const byte interruptPin = 2;
 int switch_pin = 13;
 int mode;
 
-const int delta = 20;
+const int delta = 10;
 
 Servo servo1;
 Servo servo2;
@@ -341,11 +341,11 @@ void setup(){
 
   servo1PPos = 90;
   servo1.write(servo1PPos);
-  servo2PPos = 90;
+  servo2PPos = 130;
   servo2.write(servo2PPos);
   servo3PPos = 90;
   servo3.write(servo3PPos);
-  servo4PPos = 90;
+  servo4PPos = 180;
   servo4.write(servo4PPos);
   servo5PPos = 90;
   servo5.write(servo5PPos);

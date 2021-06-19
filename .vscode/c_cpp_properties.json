@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/hanselmatthew/catkin_workspace/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/hanselmatthew/benam_ws/src/benam/include/**",
+        "/home/hanselmatthew/catkin_workspace/src/darknet_message/include/**",
+        "/home/hanselmatthew/catkin_workspace/src/darknet_ros/darknet_ros/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

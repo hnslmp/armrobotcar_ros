@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 
     //image_transport is responsible for subscription and publishing
     image_transport::ImageTransport it(nh);
-    image_transport::Publisher pub_image = it.advertise("camera", 1);
+    image_transport::Publisher pub_image = it.advertise("/benam/camera", 1);
 
     cv::Mat image;//Mat is the image class defined in OpenCV
 
@@ -30,17 +30,8 @@ int main(int argc, char** argv)
         }
         // Convert image from cv::Mat type to sensor_msgs/Image type and publish
         pub_image.publish(cv_bridge::CvImage(std_msgs::Header(), "bgr8", image).toImageMsg());// Convert image from sensor_msgs/Image type to cv::Mat type
-        /*
-                 Cv_bridge can selectively convert color and depth information. In order to use the specified feature encoding, there is a centralized coding form:
-
-                 Mono8: CV_8UC1, grayscale image
-                 Mono16: CV_16UC1, 16-bit grayscale image
-                 Bgr8: CV_8UC3 with color information and the order of colors is BGR order
-                 Rgb8: CV_8UC3 with color information and the order of colors is RGB order
-                 Bgra8: CV_8UC4, BGR color image with alpha channel
-                 Rgba8: CV_8UC4, CV, RGB color image with alpha channel
-        */
-        cv::imshow("camera", image);
+        
+        cv::imshow("/benam/camera", image);
         char c=(char)cv::waitKey(25);
     	if(c==27) break;
     }

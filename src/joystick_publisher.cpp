@@ -156,6 +156,8 @@ void joyCallback(const sensor_msgs::Joy::ConstPtr& msg){
     std_msgs::UInt16 msg;
     msg.data = 17;
     joy_publisher.publish(msg);
+    info_msg.data = "Standby";
+    info_publisher.publish(info_msg);
     ROS_INFO("17");
   }
 }
@@ -165,7 +167,7 @@ int main(int argc, char **argv) {
     ros::NodeHandle nh;
 
     joy_publisher = nh.advertise<std_msgs::UInt16>("joycontrol", 8);
-    info_publisher = nh.advertise<std_msgs::String>("state_info", 1000);
+    info_publisher = nh.advertise<std_msgs::String>("/benam/state_info", 1000);
 
     ros::Subscriber joy_subscriber = nh.subscribe("joy", 8, joyCallback);
 

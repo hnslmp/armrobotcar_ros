@@ -2,6 +2,4 @@
     <node pkg="joy" name="joy_node" type="joy_node" output="screen"/>
 
     <node pkg="benam" name="gcs" type="gcs.py" output="screen"/>
-    <node pkg="p5" name="image_receiver" type="image_receiver.py" output="screen"/>
-
 </launch>

@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     # Set Subscriber nodes
     # TODO: add information from pixhawk
-    img_subscriber = rospy.Subscriber("/p5/image_rov/compressed", CompressedImage, image_callback)
+    img_subscriber = rospy.Subscriber("/benam/image_robot/compressed", CompressedImage, image_callback)
 
     # Init master/root
     master = Tkinter.Tk()

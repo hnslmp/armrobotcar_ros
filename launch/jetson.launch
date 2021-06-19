@@ -6,6 +6,5 @@
 
     <node pkg="benam" name="joystick_publisher" type="joystick_publisher" output="screen"/>
 
-    <node pkg="benam" name="image_receiver" type="image_receiver.py" output="screen"/><node pkg="benam" name="image_receiver" type="image_receiver.py" output="screen"/>
-
+    <node pkg="benam" name="image_receiver" type="image_receiver.py" output="screen"/>
 </launch>

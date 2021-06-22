@@ -13,14 +13,15 @@ int servo1Pos,servo2Pos,servo3Pos,servo4Pos,servo5Pos,servo6Pos;
 int servo1PPos,servo2PPos,servo3PPos,servo4PPos,servo5PPos,servo6PPos;
 int servo1save,servo2save,servo3save,servo4save,servo5save,servo6save;
 
-const int kiri_depan0 = 14;
-const int kiri_depan1 = 15;
-const int kanan_depan0 = 16;
-const int kanan_depan1 = 17;
-const int kiri_belakang0 = 18;
-const int kiri_belakang1 = 19;
-const int kanan_belakang0 = 20;
-const int kanan_belakang1 = 21;
+//Pin Motor
+const int kiri_depan0 = 16;
+const int kiri_depan1 = 17;
+const int kanan_depan0 = 20;
+const int kanan_depan1 = 21;
+const int kiri_belakang0 = 14;
+const int kiri_belakang1 = 15;
+const int kanan_belakang0 = 18;
+const int kanan_belakang1 = 19;
 
 const byte interruptPin = 2;
 int switch_pin = 13;

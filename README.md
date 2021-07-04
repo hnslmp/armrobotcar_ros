@@ -30,7 +30,7 @@ https://youtu.be/bmdtt4ihS68
 * Move to Save Point
 * Dc Motor
 
-## Joystick Layour
+## Joystick Layout
 ![alt text](https://github.com/hnslmp/armrobotcar_ros/blob/master/documents/Joystick%20Layout.png)    
 
 ## Microcontroller Schematic

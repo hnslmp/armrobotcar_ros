@@ -1,5 +1,6 @@
 # ROS ArmRobotCar pkg
-6dof Arm Robot Car is an instrument that can pick up, move and put items from one position to another, 
+6dof Arm Robot Car is my final project assignment for my embedded system college course. 
+It is an instrument that can pick up, move and put items from one position to another, 
 This device has actuators, namely 4 DC motors to move places and a 6dof robot arm to move 
 objects consisting of 6 servo motors connected on frames. Unlike the existing robotic arm, 
 controlling this instrument is done using an Arduino microcontroller and a Single Board Computer 

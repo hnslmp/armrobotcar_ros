@@ -38,6 +38,7 @@ https://youtu.be/bmdtt4ihS68
 ## Hardware 
 Hardware list : 
 https://github.com/hnslmp/armrobotcar_ros/blob/master/documents/Component%20List.csv
+
 Total Cost: Approx 260 USD  
 
 Date: 07/04/2021  
